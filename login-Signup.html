@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Offline e-commerce</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/jquery-3.7.1.js"></script>
+    <script src="scripts/jquery.validate.js"></script>
+    <script src="scripts/login.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <span class="brand">The Pet Shoppe</span>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Shopnow.html">Shop Now</a></li>
+        <li><a href="admin.html" id="admin">Admin</a></li>
+        <li><a href="login-Signup.html" id="login">Login/Signup</a></li>
+      </ul>
+    </nav>
+    <main class="container">
+    <div class="c1-1">
+        <div style="border-right: dotted 1px #ccc;">
+            <h3>Login</h3>
+            <form id="frm-login">
+                <div class="col">
+                    <input placeholder="username..." id="lusername" class="input" required />
+                </div>
+                <div class="col">
+                    <input type="password" placeholder="password..." id="lpassword" class="input" required />
+                </div>
+                <div class="col" style="text-align: right;">
+                    <button  class="btn" type="button" id="login-btn">Login</button>
+                </div>
+            </form>
+        </div>
+        <div>
+            <h3>Signup</h3>
+            <form id="frm-register">
+                <div class="col">
+                    <input placeholder="username..." id="rusername" class="input" required />
+                </div>
+                <div class="col">
+                    <input type="password" placeholder="password..." id="rpassword" class="input" required />
+                </div>
+                <div class="col" style="text-align: right;">
+                    <button class="btn" type="button" id="register-btn">Signup</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    </main>
+  </body>
+</html>

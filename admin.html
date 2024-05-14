@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Offline e-commerce</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/jquery-3.7.1.js"></script>
+    <script src="scripts/jquery.validate.js"></script>
+    <script src="scripts/admin.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <span class="brand">The Pet Shoppe</span>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Shopnow.html">Shop Now</a></li>
+        <li><a href="admin.html" id="admin">Admin</a></li>
+        <li><a href="login-Signup.html" id="login">Login/Signup</a></li>
+      </ul>
+    </nav>
+    <main class="container">
+      <div class="col">
+        <div>
+          <h3>Products</h3>
+          <table class="table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Description</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+        
+      </div>
+      <div>
+        <h3>New Product</h3>
+        <form id="frm-product">
+          <div class="col">
+            <input placeholder="name..." id="name" class="input" required />
+          </div>
+          <div class="col">
+            <input type="number" placeholder="price..." id="price" class="input" required/>
+          </div>
+          <div class="col">
+            <input placeholder="description..."id="description"class="input"required/>
+          </div>
+          <div class="col">
+            <input type="file"placeholder="description..."id="picture"class="input"required/>
+          </div>
+          <div class="col" style="text-align: right">
+            <button type="reset" class="btn" type="button" id="reset-btn" >Reset</button>
+            <button class="btn" type="button" id="save-btn">Save</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
